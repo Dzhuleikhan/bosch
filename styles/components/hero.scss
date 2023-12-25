@@ -3,6 +3,7 @@
     border-radius: 0 0 80px 80px;
     padding-top: 205px;
     padding-bottom: 46px;
+    background: url('../img/hero-bg.webp') no-repeat center/cover;
 
     &__container {
         max-width: 1461px;
@@ -195,6 +196,7 @@
 @media (max-width: 550px) {
     .hero {
         padding-bottom: 38px;
+        background-position: 30%;
     }
 
     .hero__form {
