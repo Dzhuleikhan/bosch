@@ -1,7 +1,11 @@
-export default {
-  server: {
-    host: true,
-    open: true,
-  },
-  buils: {},
+import viteCompression from "vite-plugin-compression";
+
+export default () => {
+  return {
+    plugins: [viteCompression()],
+    server: {
+      host: true,
+      open: true,
+    },
+  };
 };
