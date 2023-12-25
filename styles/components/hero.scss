@@ -127,7 +127,6 @@
 
     &__list-item {
         display: flex;
-        align-items: center;
         gap: 12px;
         font-size: 22px;
         font-style: normal;
@@ -139,5 +138,130 @@
         span {
             font-weight: 600;
         }
+
+        svg {
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+
+    .hero {
+        padding-top: 100px;
+    }
+
+    .hero__list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+    }
+
+    .hero__cta-title {
+        font-size: 20px;
+    }
+
+    .hero__info {
+        max-width: 570px;
+
+        h1 {
+            font-size: 65px;
+        }
+
+        p {
+            font-size: 35px;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .hero {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .hero__info {
+        max-width: 420px;
+
+        h1 {
+            font-size: 50px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+    }
+}
+
+@media (max-width: 550px) {
+    .hero {
+        padding-bottom: 38px;
+    }
+
+    .hero__form {
+        flex-direction: column;
+    }
+
+    .hero__container {
+        padding: 0 22px;
+    }
+
+    .hero__info {
+
+        h1 {
+            font-size: 39.5px;
+            letter-spacing: -1.2px;
+        }
+
+        p {
+            letter-spacing: -0.9px;
+            margin-top: 14px;
+        }
+    }
+
+    .hero__cta {
+        margin-top: 40px;
+    }
+
+    .hero__cta-title {
+        font-size: 16px;
+    }
+
+    .hero__form {
+        margin-right: 6px;
+        margin-top: 11px;
+        gap: 9px;
+
+        input {
+            font-size: 18px;
+            padding: 14px 40px;
+        }
+
+        button {
+            font-size: 18px;
+            padding: 14px;
+            text-align: center;
+        }
+    }
+
+    .hero__cta-text {
+        font-size: 11px;
+        letter-spacing: -0.22px;
+        text-align: center;
+        margin-top: 11px;
+        margin-left: -8px;
+    }
+
+    .hero__inner {
+        padding-bottom: 30px;
+    }
+
+    .hero__bottom {
+        padding-top: 20px;
+    }
+
+    .hero__list-item {
+        align-items: center;
+        font-size: 15px;
+        gap: 9px;
     }
 }
