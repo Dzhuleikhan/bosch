@@ -14,10 +14,13 @@
         height: 100%;
         z-index: 0;
         background: url('../img/hero-bg-line.png') no-repeat center/cover;
+        pointer-events: none;
     }
 
     &__container {
         max-width: 1461px;
+        position: relative;
+        z-index: 2;
     }
 
     &__inner {
@@ -103,6 +106,12 @@
             border: none;
             border-radius: 4px;
             flex-shrink: 0;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+                box-shadow: 0 0 10px var(--red);
+            }
         }
     }
 
@@ -140,6 +149,7 @@
 
     &__list-item {
         display: flex;
+        align-items: center;
         gap: 12px;
         font-size: 22px;
         font-style: normal;
@@ -155,6 +165,12 @@
         svg {
             flex-shrink: 0;
         }
+    }
+}
+
+@media (max-width: 1300px) {
+    .hero__list-item {
+        align-items: flex-start;
     }
 }
 
