@@ -5,6 +5,7 @@
     width: 100%;
     z-index: 30;
     padding-top: 21px;
+    will-change: transform;
 
     &__inner {
         display: flex;
@@ -87,6 +88,7 @@
                 left: 0;
                 bottom: 0;
                 z-index: 2;
+                will-change: transform;
             }
         }
     }
