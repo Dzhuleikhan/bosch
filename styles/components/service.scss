@@ -48,11 +48,16 @@
             p {
                 color: var(--white);
             }
+
+            img {
+                transform: scale(1.1);
+            }
         }
 
         &-img {
             position: absolute;
             will-change: transform;
+            transition: transform 0.2s;
         }
 
         h3 {
