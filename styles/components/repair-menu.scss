@@ -1,0 +1,116 @@
+.overlay {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+}
+
+.overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s;
+}
+
+.repair {
+    position: absolute;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    z-index: 20;
+    background-color: var(--white);
+    padding-top: 190px;
+    padding-bottom: 60px;
+    will-change: transform;
+    transition: all 0.4s;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+
+    &.is-open {
+        top: 0;
+        transition: all 0.4s;
+    }
+
+    .service__cta {
+        margin-top: 60px;
+    }
+
+    &__inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+
+    &__list-item {
+        display: grid;
+        grid-template-columns: 37px 1fr;
+        gap: 22px;
+        align-items: center;
+
+        div {
+            display: flex;
+            align-items: center;
+        }
+
+        &:hover span {
+            color: var(--red);
+        }
+
+        span {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 330%;
+            letter-spacing: -0.4px;
+            color: var(--black);
+            transition: color 0.2s;
+        }
+    }
+}
+
+.service__menu {
+    position: fixed;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    background-color: var(--white);
+    transition: all 0.3s;
+    padding-top: 191px;
+    padding-bottom: 60px;
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 40px;
+        border-top: 1px solid var(--light-grey2);
+
+        &--item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            &:hover span {
+                color: var(--red);
+            }
+
+            span {
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 110%;
+                letter-spacing: -0.4px;
+                color: var(--black);
+                transition: color 0.2s;
+            }
+        }
+    }
+}
+
+.service__menu.is-open {
+    top: 0;
+    transition: all 0.3s;
+}

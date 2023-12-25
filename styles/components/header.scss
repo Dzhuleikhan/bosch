@@ -7,6 +7,10 @@
     padding-top: 21px;
     will-change: transform;
 
+    &.active {
+        background-color: var(--white);
+    }
+
     &__inner {
         display: flex;
         align-items: center;
@@ -175,7 +179,13 @@
                 color: var(--red);
             }
 
-            &--drop {
+            &--repair {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+            }
+
+            &--service {
                 display: flex;
                 align-items: center;
                 gap: 10px;
@@ -187,6 +197,41 @@
         display: none;
         align-items: center;
         gap: 28px;
+    }
+}
+
+.burger {
+
+    span {
+        transition: all 0.2s;
+        position: relative;
+    }
+
+    span:nth-child(1) {
+        top: 0;
+    }
+
+    span:nth-child(3) {
+        bottom: 0;
+    }
+}
+
+
+.burger.active {
+    span:nth-child(1) {
+        width: 100%;
+        transform: rotate(45deg);
+        top: 9px;
+    }
+
+    span:nth-child(2) {
+        opacity: 0;
+    }
+
+    span:nth-child(3) {
+        width: 100%;
+        transform: rotate(-45deg);
+        bottom: 9px;
     }
 }
 
