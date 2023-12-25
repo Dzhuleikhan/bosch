@@ -12,7 +12,7 @@ const menuItems = document.querySelectorAll(".menu--item");
 burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("active");
   menu.classList.toggle("active");
-  header.classList.toggle("active");
+  header.classList.toggle("is-active");
   if (burgerBtn.classList.contains("active")) {
     menuRepair.classList.remove("active");
     menuServ.classList.remove("active");

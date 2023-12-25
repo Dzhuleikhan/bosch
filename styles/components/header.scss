@@ -19,6 +19,10 @@
         transition: all 0.3s;
     }
 
+    &.is-active {
+        background-color: var(--white);
+    }
+
     &__inner {
         display: flex;
         align-items: center;
