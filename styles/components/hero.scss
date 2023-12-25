@@ -296,5 +296,10 @@
         align-items: center;
         font-size: 15px;
         gap: 9px;
+
+        &:nth-child(3) svg {
+            width: 30px;
+            height: 30px;
+        }
     }
 }

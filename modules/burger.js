@@ -7,6 +7,7 @@ const menuRepair = document.querySelector(".menu__rep");
 const menuRepBack = document.querySelector(".menu__rep-back");
 const menuServ = document.querySelector(".menu__serv");
 const menuServBack = document.querySelector(".menu__serv-back");
+const menuItems = document.querySelectorAll(".menu--item");
 
 burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("active");
@@ -34,4 +35,14 @@ menuLinkServ.addEventListener("click", (e) => {
 
 menuServBack.addEventListener("click", () => {
   menuServ.classList.remove("active");
+});
+
+menuItems.forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    burgerBtn.classList.remove("active");
+    menu.classList.remove("active");
+    menuRepair.classList.remove("active");
+    menuServ.classList.remove("active");
+  });
 });
