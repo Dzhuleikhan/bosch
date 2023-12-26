@@ -245,3 +245,32 @@
         margin-left: -11px;
     }
 }
+
+.discount {
+    padding-top: 32px;
+    padding-bottom: 52px;
+
+    .container {
+        max-width: 1446px;
+    }
+
+    .blue__head {
+        h2 {
+            max-width: 350px;
+            font-size: 45px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 95%;
+            letter-spacing: -1.35px;
+        }
+
+        p {
+            max-width: 460px;
+            margin-top: 10px;
+        }
+    }
+
+    .blue__cta {
+        margin-top: 32px;
+    }
+}
