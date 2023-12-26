@@ -334,3 +334,10 @@
         height: 40%;
     }
 }
+
+
+@media (max-width: 450px) {
+    .price__more-btn {
+        max-width: 100%;
+    }
+}
