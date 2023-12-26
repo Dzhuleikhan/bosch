@@ -1,9 +1,24 @@
 .master {
     padding-top: 80px;
     padding-bottom: 127px;
+    position: relative;
+
+    &__lines {
+        width: 100%;
+        height: 767px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: url('../img/master-bg-lines.webp') no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 1;
+    }
 
     &__content {
         padding-top: 95px;
+        position: relative;
+        z-index: 3;
     }
 
     &__head {
@@ -238,5 +253,235 @@
 
     .master__slider .swiper-scrollbar {
         margin-top: 36px !important;
+    }
+}
+
+.home {
+    padding-top: 121px;
+    position: relative;
+    z-index: 3;
+
+    h2 {
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 110%;
+        letter-spacing: -0.9px;
+        color: var(--black);
+        max-width: 720px;
+
+        span {
+            color: var(--red);
+        }
+    }
+
+    &__inner {
+        margin-top: 13px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        gap: 20px;
+    }
+
+    &__item-1 {
+        max-width: 220px;
+        margin-bottom: 22px;
+
+        svg {
+            margin-left: 17px;
+        }
+
+        p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: -0.2px;
+            color: var(--black);
+            margin-top: 13px;
+        }
+    }
+
+    &__item-2 {
+        max-width: 440px;
+        margin-bottom: 24px;
+        margin-left: 20px;
+
+        h4 {
+            font-size: 60px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 110%;
+            letter-spacing: -1.2px;
+            color: var(--red);
+        }
+
+        p {
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: -0.2px;
+            color: var(--black);
+            margin-top: 13px;
+        }
+    }
+
+    &__item-3 {
+        max-width: 555px;
+
+        svg {
+            margin-left: 18px;
+        }
+
+        h4 {
+            max-width: 420px;
+            font-size: 27px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 120%;
+            letter-spacing: -0.27px;
+            color: var(--black);
+            margin-top: 9px;
+        }
+
+        p {
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: -0.18px;
+            color: var(--grey);
+            margin-top: 21px;
+        }
+    }
+}
+
+@media (max-width: 1200px) {
+    .home__item-3 {
+        max-width: 420px;
+    }
+}
+
+@media (max-width: 992px) {
+    .home__inner {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 27px;
+    }
+
+    .home__item-1 {
+        max-width: 400px;
+        display: flex;
+        align-items: center;
+        gap: 19px;
+        margin-bottom: 0;
+
+        svg {
+            width: 50px;
+            height: 50px;
+            flex-shrink: 0;
+            margin-left: 0;
+        }
+
+        p {
+            margin-top: 0;
+        }
+    }
+
+    .home__item-2 {
+        margin-left: 0;
+        margin-bottom: 0;
+        max-width: 100%;
+    }
+
+    .home__item-3 {
+        max-width: 100%;
+
+        div {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+
+            svg {
+                flex-shrink: 0;
+            }
+        }
+    }
+}
+
+@media (max-width: 550px) {
+
+    .master {
+        padding-bottom: 40px;
+    }
+
+    .master__lines {
+        background-position: 78%;
+    }
+
+    .home {
+        padding-top: 38px;
+
+        h2 {
+            font-size: 30px;
+            letter-spacing: -0.9px;
+            line-height: 100%;
+        }
+    }
+
+    .home__inner {
+        margin-top: 28px;
+        gap: 0;
+    }
+
+    .home__item-1 {
+        gap: 21px;
+
+        p {
+            font-size: 16px;
+            letter-spacing: -0.16px;
+        }
+    }
+
+    .home__item-2 {
+        margin-top: 20px;
+
+        h4 {
+            font-size: 40px;
+            letter-spacing: -0.8px;
+        }
+
+        p {
+            font-size: 16px;
+            letter-spacing: -0.16px;
+            margin-top: 3px;
+        }
+    }
+
+    .home__item-3 {
+        margin-top: 21px;
+
+        div {
+            margin-left: 10px;
+
+            svg {
+                width: 34px;
+                height: 41px;
+                margin-left: 0;
+            }
+
+            h4 {
+                font-size: 18px;
+                letter-spacing: -0.18px;
+                margin-top: 0;
+            }
+        }
+
+        p {
+            font-size: 15px;
+            letter-spacing: -0.15px;
+            margin-top: 15px;
+        }
     }
 }

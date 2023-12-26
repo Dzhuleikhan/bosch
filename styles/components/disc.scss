@@ -1,6 +1,8 @@
 .disc {
     display: flex;
     gap: 10px;
+    position: relative;
+    z-index: 3;
 
     &__left {
         width: 100%;
