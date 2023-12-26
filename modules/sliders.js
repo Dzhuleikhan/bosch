@@ -18,3 +18,26 @@ const masterSlider = new Swiper(".master__slider", {
     el: ".swiper-scrollbar",
   },
 });
+
+const reviewSlider = new Swiper(".review__slider", {
+  modules: [Navigation, Scrollbar],
+  spaceBetween: 20,
+  slidesPerView: "auto",
+
+  navigation: {
+    prevEl: ".review-button-prev",
+    nextEl: ".review-button-next",
+  },
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+
+  breakpoints: {
+    320: {
+      spaceBetween: 5,
+    },
+    550: {
+      spaceBetween: 20,
+    },
+  },
+});
