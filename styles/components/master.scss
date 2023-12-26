@@ -1,0 +1,10 @@
+.master {
+    padding-top: 80px;
+    padding-bottom: 127px;
+}
+
+@media (max-width: 550px) {
+    .master {
+        padding-top: 14px;
+    }
+}
