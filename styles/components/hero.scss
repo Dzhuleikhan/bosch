@@ -37,10 +37,10 @@
             font-weight: 700;
             line-height: 95%;
             letter-spacing: -2.7px;
-            color: var(--black);
+            color: var(--text-color-main);
 
             span {
-                color: var(--red);
+                color: var(--accent-color);
             }
         }
 
@@ -50,7 +50,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -1.5px;
-            color: var(--black);
+            color: var(--text-color-main);
             margin-top: 12px;
         }
 
@@ -68,7 +68,7 @@
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.25px;
-        color: var(--black);
+        color: var(--text-color-main);
 
         span {
             font-weight: 700;
@@ -88,10 +88,11 @@
             line-height: 120%;
             letter-spacing: -0.4px;
             padding: 18px 40px;
-            color: var(--black);
+            color: var(--text-color-main);
             border-radius: 4px;
             border: 1px solid #BCC5D0;
             outline: none;
+            background-color: var(--input-bg);
         }
 
         button {
@@ -100,9 +101,9 @@
             font-weight: 700;
             line-height: 120%;
             letter-spacing: -0.4px;
-            color: var(--white);
+            color: var(--secondary-color);
             padding: 18px 33.5px;
-            background-color: var(--red);
+            background-color: var(--accent-color);
             border: none;
             border-radius: 4px;
             flex-shrink: 0;
@@ -110,7 +111,7 @@
             transition: 0.2s;
 
             &:hover {
-                box-shadow: 0 0 10px var(--red);
+                box-shadow: 0 0 10px var(--accent-color);
             }
         }
     }
@@ -121,7 +122,7 @@
         font-weight: 500;
         line-height: 110%;
         letter-spacing: -0.28px;
-        color: var(--light-grey);
+        color: var(--secondary1);
         max-width: 333px;
         margin-top: 16px;
         margin-left: 3px;
@@ -138,7 +139,7 @@
     &__bottom {
         padding-right: 5px;
         padding-top: 40px;
-        border-top: 1px solid var(--light-grey2);
+        border-top: 1px solid var(--secondary2);
     }
 
     &__list {
@@ -156,7 +157,7 @@
         font-weight: 400;
         line-height: 110%;
         letter-spacing: -0.22px;
-        color: var(--black);
+        color: var(--text-color-main);
 
         span {
             font-weight: 600;

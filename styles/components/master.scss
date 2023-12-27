@@ -32,11 +32,11 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -1.65px;
-            color: var(--black);
+            color: var(--primary-color);
             max-width: 990px;
 
             span {
-                color: var(--red);
+                color: var(--accent-color);
             }
         }
     }
@@ -61,7 +61,7 @@
             font-weight: 500;
             line-height: 120%;
             letter-spacing: -0.2px;
-            color: var(--black);
+            color: var(--primary-color);
         }
     }
 
@@ -83,12 +83,12 @@
             max-width: 913px;
             left: 50% !important;
             transform: translateX(-50%);
-            background-color: var(--light-grey2);
+            background-color: var(--secondary2);
             position: relative !important;
             margin-top: 62px !important;
 
             .swiper-scrollbar-drag {
-                background-color: var(--red);
+                background-color: var(--accent-color);
             }
         }
     }
@@ -108,7 +108,7 @@
         font-weight: 600;
         line-height: 110%;
         letter-spacing: -0.4px;
-        color: var(--black);
+        color: var(--primary-color);
     }
 
     &__prof {
@@ -117,7 +117,7 @@
         font-weight: 400;
         line-height: 130%;
         letter-spacing: -0.15px;
-        color: var(--grey);
+        color: var(--text-color);
         margin-top: 8px;
     }
 
@@ -127,9 +127,9 @@
         font-weight: 400;
         line-height: 130%;
         letter-spacing: -0.12px;
-        color: var(--grey);
+        color: var(--text-color);
         padding: 4px 10.5px;
-        border: 1px solid var(--grey);
+        border: 1px solid var(--text-color);
         border-radius: 5px;
         display: inline-block;
         margin-top: 11px;
@@ -141,25 +141,25 @@
     width: 50px;
     height: 35px;
     border-radius: 80px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--secondary-color);
     cursor: pointer;
     transition: all 0.2s;
 
     &:hover {
-        background-color: var(--red);
-        border-color: var(--red);
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
 
         svg {
-            fill: var(--white);
+            fill: var(--secondary-color);
         }
     }
 
     svg {
-        fill: var(--black);
+        fill: var(--primary-color);
         transition: all 0.2s;
     }
 }
@@ -267,11 +267,11 @@
         font-weight: 600;
         line-height: 110%;
         letter-spacing: -0.9px;
-        color: var(--black);
+        color: var(--primary-color);
         max-width: 720px;
 
         span {
-            color: var(--red);
+            color: var(--accent-color);
         }
     }
 
@@ -297,7 +297,7 @@
             font-weight: 500;
             line-height: 120%;
             letter-spacing: -0.2px;
-            color: var(--black);
+            color: var(--primary-color);
             margin-top: 13px;
         }
     }
@@ -313,7 +313,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -1.2px;
-            color: var(--red);
+            color: var(--accent-color);
         }
 
         p {
@@ -322,7 +322,7 @@
             font-weight: 500;
             line-height: 120%;
             letter-spacing: -0.2px;
-            color: var(--black);
+            color: var(--primary-color);
             margin-top: 13px;
         }
     }
@@ -341,7 +341,7 @@
             font-weight: 600;
             line-height: 120%;
             letter-spacing: -0.27px;
-            color: var(--black);
+            color: var(--primary-color);
             margin-top: 9px;
         }
 
@@ -351,7 +351,7 @@
             font-weight: 400;
             line-height: 130%;
             letter-spacing: -0.18px;
-            color: var(--grey);
+            color: var(--text-color);
             margin-top: 21px;
         }
     }

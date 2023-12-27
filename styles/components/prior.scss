@@ -1,7 +1,7 @@
 .prior {
     padding-top: 60px;
     padding-bottom: 80px;
-    background-color: #F4F6F8;
+    background-color: var(--secondary-bg);
     position: relative;
 
     &__lines {
@@ -29,7 +29,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -1.65px;
-            color: var(--black);
+            color: var(--primary-color);
 
             span {
                 color: var(--red);
@@ -51,7 +51,7 @@
 
     &__item {
         padding: 65px 44px 65px 35px;
-        background-color: var(--white);
+        background-color: var(--secondary-color);
         border-radius: 15px;
 
         h3 {
@@ -60,7 +60,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -0.48px;
-            color: var(--black);
+            color: var(--primary-color);
         }
 
         &:nth-child(1) {
@@ -139,7 +139,7 @@
             font-weight: 400;
             line-height: 120%;
             letter-spacing: -0.2px;
-            color: var(--black);
+            color: var(--primary-color);
         }
 
         span {
@@ -148,7 +148,7 @@
             font-weight: 400;
             line-height: 130%;
             letter-spacing: -0.15px;
-            color: var(--grey);
+            color: var(--text-color);
             margin-top: 25px;
             display: block;
         }

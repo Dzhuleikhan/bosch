@@ -1,15 +1,29 @@
 // Scheme-1 colors
 :root {
-    --black: #000000;
-    --white: #ffffff;
-    --red: #F00000;
-    --blue: #2C6AC8;
-    --grey: #2C2F36;
-    --bosh-professional: #ECF1F8;
-    --light-grey: #9FA5AD;
-    --light-grey2: #DDE1E7;
-    --light-grey3: #CDD6E2;
+    /* Черный */
+    --primary-color: #000000;
+    /* Белый */
+    --secondary-color: #ffffff;
+    /* Красный */
+    --accent-color: #F00000;
+    /* Серый фон */
+    --secondary-bg: #F4F6F8;
+    /* Фон инпута */
+    --input-bg: #ffffff;
+    /* Синий */
+    --extra: #2C6AC8;
+    /* Фон первого экрана */
     --hero-gradient: linear-gradient(119deg, #F1F3F8 16.22%, #DFE7F2 82.39%);
-    --blue-gradient: linear-gradient(97deg, #060C15 24.69%, #137BFF 98.34%);
+    /* Серый */
+    --text-color: #2C2F36;
+    /* Фон карточки услуг */
     --service-card-bg: #F4F6F8;
+    /* Фон формы */
+    --form-gradient: linear-gradient(97deg, #060C15 24.69%, #137BFF 98.34%);
+    /* Светло-серый 1 */
+    --secondary1: #9FA5AD;
+    /* Светло-серый 2 */
+    --secondary2: #DDE1E7;
+    /* Светло-серый 3 */
+    --secondary3: #CDD6E2;
 }

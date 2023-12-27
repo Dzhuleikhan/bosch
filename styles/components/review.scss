@@ -11,10 +11,10 @@
         font-weight: 600;
         line-height: 110%;
         letter-spacing: -1.65px;
-        color: var(--black);
+        color: var(--primary-color);
 
         span {
-            color: var(--red);
+            color: var(--accent-color);
         }
     }
 
@@ -37,7 +37,7 @@
             font-weight: 400;
             line-height: 110%;
             letter-spacing: -0.13px;
-            color: var(--grey);
+            color: var(--text-color);
         }
     }
 
@@ -59,7 +59,7 @@
         font-style: normal;
         font-weight: 600;
         line-height: 120%;
-        color: var(--black);
+        color: var(--primary-color);
     }
 
     &__btns {
@@ -84,17 +84,17 @@
             margin-top: 55px !important;
             left: 50% !important;
             transform: translateX(-50%);
-            background-color: var(--light-grey2);
+            background-color: var(--secondary2);
 
             .swiper-scrollbar-drag {
-                background-color: var(--red);
+                background-color: var(--accent-color);
             }
         }
     }
 
     &__item {
         border-radius: 15px;
-        background-color: #F4F6F8;
+        background-color: var(--secondary-bg);
         padding: 29px 30px 41px 28px;
         min-height: 537px;
         display: flex;
@@ -116,7 +116,7 @@
             font-weight: 500;
             line-height: 110%;
             letter-spacing: -0.4px;
-            color: var(--black);
+            color: var(--primary-color);
         }
     }
 
@@ -147,7 +147,7 @@
             font-weight: 400;
             line-height: 130%;
             letter-spacing: -0.17px;
-            color: var(--black);
+            color: var(--primary-color);
         }
     }
 
@@ -157,7 +157,7 @@
         font-weight: 400;
         line-height: 110%;
         letter-spacing: -0.13px;
-        color: var(--light-grey);
+        color: var(--secondary1);
         margin-top: auto;
     }
 }
@@ -167,25 +167,25 @@
     width: 50px;
     height: 35px;
     border-radius: 80px;
-    border: 1px solid var(--black);
+    border: 1px solid var(--primary-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--white);
+    background-color: var(--secondary-color);
     cursor: pointer;
     transition: all 0.2s;
 
     &:hover {
-        background-color: var(--red);
-        border-color: var(--red);
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
 
         svg {
-            fill: var(--white);
+            fill: var(--secondary-color);
         }
     }
 
     svg {
-        fill: var(--black);
+        fill: var(--primary-color);
         transition: all 0.2s;
     }
 }

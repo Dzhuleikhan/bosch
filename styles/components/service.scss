@@ -13,7 +13,7 @@
             color: var(--black);
 
             span {
-                color: var(--red);
+                color: var(--accent-color);
             }
         }
     }
@@ -38,15 +38,15 @@
         transition: 0.4s;
 
         &:hover {
-            background-color: var(--red);
+            background-color: var(--accent-color);
             transition: 0.4s;
 
             h3 {
-                color: var(--white);
+                color: var(--secondary-color);
             }
 
             p {
-                color: var(--white);
+                color: var(--secondary-color);
             }
 
             img {
@@ -66,7 +66,7 @@
             font-weight: 500;
             line-height: 110%;
             letter-spacing: -0.4px;
-            color: var(--black);
+            color: var(--primary-color);
             transition: 0.2s;
             position: relative;
             z-index: 3;
@@ -78,7 +78,7 @@
             font-weight: 400;
             line-height: 100%;
             letter-spacing: -0.4px;
-            color: var(--black);
+            color: var(--primary-color);
             transition: 0.2s;
             position: relative;
             z-index: 3;
@@ -186,7 +186,7 @@
     }
 
     &__cta {
-        background-color: var(--blue);
+        background-color: var(--extra);
         margin-top: 30px;
         padding: 25px 80px;
         display: flex;
@@ -223,7 +223,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -0.44px;
-            color: var(--white);
+            color: var(--secondary-color);
         }
     }
 
@@ -240,7 +240,7 @@
             font-weight: 600;
             line-height: 120%;
             letter-spacing: -0.24px;
-            color: var(--white);
+            color: var(--secondary-color);
             flex-shrink: 0;
         }
     }
@@ -251,17 +251,17 @@
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -0.16px;
-        color: var(--white);
+        color: var(--secondary-color);
         padding: 10px 13px;
         background: none;
         border-radius: 4px;
-        border: 1px solid var(--white);
+        border: 1px solid var(--secondary-color);
         cursor: pointer;
         transition: 0.2s;
 
         &:hover {
-            background-color: var(--white);
-            color: var(--blue);
+            background-color: var(--secondary-color);
+            color: var(--extra);
         }
 
         span:nth-child(2) {
@@ -361,7 +361,7 @@
             background-color: var(--bosh-professional);
 
             &:hover {
-                background-color: var(--red);
+                background-color: var(--accent-color);
             }
 
             h3 {
@@ -401,11 +401,11 @@
                 font-weight: 500;
                 line-height: 110%;
                 letter-spacing: -0.4px;
-                color: var(--black);
+                color: var(--primary-color);
             }
 
             &-right {
-                color: var(--light-grey);
+                color: var(--secondary1);
                 font-size: 20px;
                 font-style: normal;
                 font-weight: 400;

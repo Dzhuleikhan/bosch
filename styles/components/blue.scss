@@ -1,7 +1,7 @@
 .blue {
     padding-top: 41px;
     padding-bottom: 52px;
-    background: var(--blue-gradient);
+    background: var(--form-gradient);
     position: relative;
 
     &::before {
@@ -49,7 +49,7 @@
             font-weight: 600;
             line-height: 95%;
             letter-spacing: -1.35px;
-            color: var(--white);
+            color: var(--secondary-color);
         }
 
         p {
@@ -58,7 +58,7 @@
             font-weight: 500;
             line-height: 110%;
             letter-spacing: -0.4px;
-            color: var(--light-grey2);
+            color: var(--secondary2);
             max-width: 500px;
         }
     }
@@ -75,13 +75,13 @@
 
         input {
             padding: 17px 36px;
-            background-color: var(--white);
+            background-color: var(--input-bg);
             font-size: 20px;
             font-style: normal;
             font-weight: 600;
             line-height: 120%;
             letter-spacing: -0.4px;
-            color: var(--black);
+            color: var(--primary-color);
             border-radius: 4px;
             width: 100%;
             max-width: 385px;
@@ -96,9 +96,9 @@
             font-weight: 700;
             line-height: 120%;
             letter-spacing: -0.4px;
-            color: var(--white);
+            color: var(--secondary-color);
             border-radius: 4px;
-            background-color: var(--red);
+            background-color: var(--accent-color);
             text-align: center;
             padding: 17px;
             border: none;
@@ -107,7 +107,7 @@
             transition: 0.2s;
 
             &:hover {
-                box-shadow: 0 0 10px var(--red);
+                box-shadow: 0 0 10px var(--accent-color);
             }
         }
     }
@@ -118,7 +118,7 @@
         font-weight: 500;
         line-height: 110%;
         letter-spacing: -0.28px;
-        color: var(--light-grey);
+        color: var(--secondary1);
         margin-top: 16px;
         max-width: 333px;
         margin-left: 3px;
@@ -166,7 +166,7 @@
         font-weight: 600;
         line-height: 100%;
         letter-spacing: -0.11px;
-        color: var(--white);
+        color: var(--secondary-color);
         max-width: 57px;
         margin: 0 auto;
         margin-top: 11px;
