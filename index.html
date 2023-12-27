@@ -3121,20 +3121,36 @@
                 </p>
                 <button class="faq__btn">Получить консультацию</button>
               </div>
-              <div class="faq__acc acc">
-                <div class="acc__item active">
+              <div
+                class="faq__acc acc"
+                itemscope
+                itemtype="https://schema.org/FAQPage"
+              >
+                <div
+                  class="acc__item active"
+                  itemscope
+                  itemprop="mainEntity"
+                  itemtype="https://schema.org/Question"
+                >
                   <div class="acc__question">
                     <div class="acc__question-icon"></div>
-                    <h3>Какие документы выдаёте на проведенный ремонт?</h3>
+                    <h3 itemprop="name">
+                      Какие документы выдаёте на проведенный ремонт?
+                    </h3>
                   </div>
-                  <div class="acc__answer">
-                    <p>
+                  <div
+                    class="acc__answer"
+                    itemscope
+                    itemprop="acceptedAnswer"
+                    itemtype="https://schema.org/Answer"
+                  >
+                    <p itemprop="text">
                       После ремонта наш мастер подготовит бланк заказа с
                       перечнем замененных деталей, выполненных работ и
                       стоимостью услуг. Также будет указан гарантийный срок на
                       нашу работу.
                     </p>
-                    <span>
+                    <span itemprop="text">
                       Копию этого бланка мы выдадим вам по окончании ремонта.
                     </span>
                   </div>
