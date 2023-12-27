@@ -6,3 +6,4 @@ import "./modules/header";
 import "./modules/burger";
 import "./modules/desktopMenu";
 import "./modules/price";
+import "./modules/faq";
