@@ -1,0 +1,221 @@
+.inform {
+    padding-top: 93px;
+
+    &__container {
+        max-width: 1448px;
+    }
+
+    &__inner {
+        display: flex;
+        gap: 51px;
+    }
+
+    &__img {
+        width: 100%;
+        max-width: 431px;
+        flex-shrink: 0;
+        border-radius: 30px;
+        overflow: hidden;
+        position: relative;
+        margin-bottom: auto;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__badge {
+        padding: 15px 33px;
+        background-color: var(--accent-color);
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        border-radius: 30px 0 0 0;
+
+        p {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 95%;
+            letter-spacing: -0.9px;
+            color: var(--secondary-color);
+        }
+    }
+
+    &__content {
+        margin-top: 5px;
+    }
+
+    &__top {
+
+        h2 {
+            font-size: 55px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 95%;
+            letter-spacing: -1.65px;
+            color: var(--primary-color);
+            max-width: 687px;
+
+            br {
+                display: none;
+            }
+
+            span {
+                color: var(--accent-color);
+            }
+        }
+    }
+
+    &__subtitle {
+        font-size: 27px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 120%;
+        letter-spacing: -0.27px;
+        color: var(--primary-color);
+        margin-top: 40px;
+        max-width: 840px;
+    }
+
+    &__descr {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 130%;
+        letter-spacing: -0.18px;
+        color: var(--text-color);
+        margin-top: 25px;
+        max-width: 861px;
+    }
+
+    &__nums {
+        display: flex;
+        gap: 90px;
+        margin-top: 95px;
+        padding-top: 32px;
+        border-top: 1px solid var(--secondary2);
+        flex-wrap: wrap;
+    }
+
+    &__num-item {
+
+        h3 {
+            font-size: 50px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 95%;
+            letter-spacing: -1.5px;
+            color: var(--primary-color);
+        }
+
+        p {
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 130%;
+            letter-spacing: -0.16px;
+            color: var(--text-color);
+            margin-top: 6px;
+        }
+    }
+}
+
+@media (max-width: 1250px) {
+    .inform__nums {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .inform__inner {
+        flex-direction: column;
+    }
+
+    .inform__img {
+        max-width: 100%;
+        height: 500px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+
+    .inform {
+        padding-top: 36px;
+    }
+
+    .inform__img {
+        height: 302px;
+    }
+
+    .inform__badge {
+        padding: 12px 26px;
+
+        p {
+            font-size: 24.465px;
+            line-height: 95%;
+            letter-spacing: -0.734px;
+        }
+    }
+
+    .inform__inner {
+        gap: 14px;
+    }
+
+    .inform__content {
+        margin-left: 0;
+    }
+
+    .inform__top {
+
+        h2 {
+            font-size: 30px;
+            line-height: 100%;
+            letter-spacing: -0.9px;
+
+            br {
+                display: block;
+            }
+        }
+    }
+
+    .inform__subtitle {
+        font-size: 18px;
+        letter-spacing: -0.18px;
+        margin-top: 15px;
+    }
+
+    .inform__descr {
+        font-size: 16px;
+        letter-spacing: -0.16px;
+        margin-top: 12px;
+    }
+
+    .inform__nums {
+        margin-top: 31px;
+        padding-top: 20px;
+        gap: 60px;
+        row-gap: 10px;
+    }
+
+    .inform__num-item {
+
+        h3 {
+            font-size: 30px;
+            line-height: 95%;
+            letter-spacing: -0.9px;
+        }
+
+        p {
+            font-size: 14px;
+            letter-spacing: -0.14px;
+            margin-top: 2px;
+        }
+    }
+}
