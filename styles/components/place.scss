@@ -305,3 +305,14 @@
 
 
 }
+
+@media (max-width: 450px) {
+    .place__cover-btn {
+        width: 100%;
+        padding: 4px;
+        font-size: 16px;
+        line-height: 120%;
+        letter-spacing: -0.16px;
+
+    }
+}
