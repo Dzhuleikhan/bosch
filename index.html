@@ -1203,10 +1203,7 @@
                 <h3 class="service__item-title" itemprop="name">
                   Ремонт стиральных машин
                 </h3>
-                <p class="service__item-price">
-                  от <span itemprop="price">280</span
-                  ><span itemprop="priceCurrency">₽</span>
-                </p>
+                <p class="service__item-price" itemprop="price">от 280₽</p>
                 <img
                   itemprop="image"
                   class="service__item-img"
@@ -1217,9 +1214,16 @@
                   alt="Стиральная машина"
                 />
               </a>
-              <a href="#" class="service__item">
-                <h3 class="service__item-title">Ремонт посудомоечных машин</h3>
-                <p class="service__item-price">от 590₽</p>
+              <a
+                href="#"
+                class="service__item"
+                itemscope
+                itemtype="https://schema.org/Offer"
+              >
+                <h3 class="service__item-title" itemprop="name">
+                  Ремонт посудомоечных машин
+                </h3>
+                <p class="service__item-price" itemprop="price">от 590₽</p>
                 <img
                   class="service__item-img"
                   width="190"
@@ -1227,6 +1231,7 @@
                   title="Посудомоечная машина"
                   src="./img/service-item-img2.webp"
                   alt="Посудомоечная машина"
+                  itemprop="image"
                 />
               </a>
               <a href="#" class="service__item">
