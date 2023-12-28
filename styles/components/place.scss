@@ -40,7 +40,7 @@
     }
 
     &__cover {
-        background: linear-gradient(0deg, #FFF 12.8%, rgba(255, 255, 255, 0.00) 91.96%);
+        background: linear-gradient(0deg, var(--secondary-color) 12.8%, rgba(255, 255, 255, 0.00) 91.96%);
         position: absolute;
         left: 0;
         bottom: 0;
