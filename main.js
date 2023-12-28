@@ -8,3 +8,4 @@ import "./modules/desktopMenu";
 import "./modules/price";
 import "./modules/faq";
 import "./modules/place";
+import "./modules/animations";

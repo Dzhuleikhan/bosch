@@ -36,6 +36,7 @@
         border-radius: 15px;
         overflow: hidden;
         transition: 0.4s;
+        will-change: transform, opacity;
 
         &:hover {
             background-color: var(--accent-color);

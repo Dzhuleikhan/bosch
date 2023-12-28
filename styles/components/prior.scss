@@ -53,6 +53,7 @@
         padding: 65px 44px 65px 35px;
         background-color: var(--secondary-color);
         border-radius: 15px;
+        will-change: transform, opacity;
 
         h3 {
             font-size: 24px;

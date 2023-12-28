@@ -59,6 +59,7 @@
 
     &__item {
         flex-shrink: 0;
+        will-change: transform, opacity;
 
         &:nth-child(1) {
             margin-right: 46px;
