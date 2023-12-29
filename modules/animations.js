@@ -35,14 +35,14 @@ mm.add("(min-width: 1025px)", () => {
       gsap.set(elements, { alpha: 0, overwrite: true }),
   });
   //   phone animation
-  gsap.to(".blue__phone-icon", {
+  gsap.to(".blue__phone-icon-a", {
     scale: 1.1,
     duration: 0.8,
     repeat: -1,
     yoyo: true,
     ease: "none",
   });
-  gsap.to(".blue__phone-hand", {
+  gsap.to(".blue__phone-hand-a", {
     y: -10,
     duration: 0.8,
     repeat: -1,

@@ -32,6 +32,10 @@ body {
     background-color: var(--secondary-color);
 }
 
+input {
+    outline: none;
+}
+
 html {
     font-family: 'Onest';
     font-size: 18px;
