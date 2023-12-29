@@ -359,7 +359,7 @@
         }
 
         .service__item:nth-child(8) {
-            background-color: var(--bosh-professional);
+            background-color: var(--secondary5);
 
             &:hover {
                 background-color: var(--accent-color);
@@ -375,6 +375,7 @@
                 bottom: 57px;
             }
         }
+
     }
 
     &__adv {
