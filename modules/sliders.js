@@ -41,3 +41,27 @@ const reviewSlider = new Swiper(".review__slider", {
     },
   },
 });
+
+const mediaQuery = window.matchMedia("(max-width: 1330px)");
+
+function handleTabletChange(e) {
+  // Check if the media query is true
+  if (e.matches) {
+    document.querySelector(".steps__inner").classList.add("steps__slider");
+    document.querySelector(".steps__wrapper").classList.add("swiper-wrapper");
+    document.querySelectorAll(".steps__item").forEach((el) => {
+      el.classList.add("swiper-slide");
+    });
+    new Swiper(".steps__slider", {
+      modules: [Scrollbar],
+      slidesPerView: "auto",
+      spaceBetween: 30,
+      scrollbar: {
+        el: ".swiper-scrollbar",
+      },
+    });
+  }
+}
+
+mediaQuery.addListener(handleTabletChange);
+handleTabletChange(mediaQuery);

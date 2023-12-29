@@ -28,7 +28,7 @@
 
     &__content.active {
 
-        .place__content-inner {
+        .place__list {
             max-height: 100%;
         }
 
@@ -156,14 +156,15 @@
 
     &__content-inner {
         margin-top: 15px;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        gap: 20px;
-        max-height: 380px;
-        overflow: hidden;
     }
 
     &__list {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+        row-gap: 0;
+        max-height: 380px;
+        overflow: hidden;
 
         li {
             font-size: 14px;
@@ -177,9 +178,8 @@
 }
 
 @media (max-width: 1200px) {
-    .place__content-inner {
+    .place__list {
         grid-template-columns: repeat(3, 1fr);
-        row-gap: 0;
     }
 }
 
@@ -193,7 +193,7 @@
         font-size: 45px;
     }
 
-    .place__content-inner {
+    .place__list {
         max-height: 260px;
     }
 
@@ -208,10 +208,8 @@
 }
 
 @media (max-width: 650px) {
-    .place__content-inner {
+    .place__list {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 0;
-
     }
 }
 

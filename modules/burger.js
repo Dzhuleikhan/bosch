@@ -10,6 +10,7 @@ const menuRepBack = document.querySelector(".menu__rep-back");
 const menuServ = document.querySelector(".menu__serv");
 const menuServBack = document.querySelector(".menu__serv-back");
 const menuItems = document.querySelectorAll(".menu--item");
+const menuMobLink = document.querySelector(".header__mob-link");
 
 burgerBtn.addEventListener("click", () => {
   burgerBtn.classList.toggle("active");
@@ -51,5 +52,14 @@ menuItems.forEach((el) => {
     menu.classList.remove("active");
     menuRepair.classList.remove("active");
     menuServ.classList.remove("active");
+    document.querySelector("body").style.overflow = "visible";
   });
+});
+
+menuMobLink.addEventListener("click", () => {
+  burgerBtn.classList.remove("active");
+  menu.classList.remove("active");
+  menuRepair.classList.remove("active");
+  menuServ.classList.remove("active");
+  document.querySelector("body").style.overflow = "visible";
 });

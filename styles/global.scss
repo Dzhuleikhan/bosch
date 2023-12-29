@@ -30,6 +30,7 @@ a {
 
 body {
     background-color: var(--secondary-color);
+    user-select: none;
 }
 
 input {
