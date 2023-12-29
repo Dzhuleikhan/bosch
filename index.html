@@ -2424,7 +2424,11 @@
             <h2>Отзывы о ремонте бытовой техники <span>Bosch</span></h2>
             <div class="review__top">
               <div class="review__top-left">
-                <div class="review__rate">
+                <div
+                  class="review__rate"
+                  itemscope
+                  itemtype="https://schema.org/Rating"
+                >
                   <div class="review__rate-stars">
                     <svg
                       width="23"
@@ -2487,7 +2491,7 @@
                       />
                     </svg>
                   </div>
-                  <div class="review__rate-num">4.9</div>
+                  <div class="review__rate-num" itemprop="ratingValue">4.9</div>
                 </div>
                 <p>средняя оценка нашей услуги</p>
               </div>
@@ -2523,10 +2527,19 @@
             <div class="review__slider">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="review__item">
+                  <div
+                    class="review__item"
+                    itemscope
+                    itemtype="https://schema.org/Review"
+                  >
                     <div class="review__item-head">
-                      <div class="review__item-rate">
-                        <p>Саша Голивич</p>
+                      <div
+                        class="review__item-rate"
+                        itemprop="author"
+                        itemscope
+                        itemtype="https://schema.org/Person"
+                      >
+                        <p itemprop="name">Саша Голивич</p>
                         <div class="review__item-rate--stars">
                           <svg
                             width="11"
@@ -2605,7 +2618,7 @@
                         </svg>
                       </div>
                     </div>
-                    <div class="review__item-text">
+                    <div class="review__item-text" itemprop="name">
                       <p>
                         Моя кофе-машина сломалась, и я был в отчаянии, потому
                         что я не могу начинать свой день без хорошего кофе.
