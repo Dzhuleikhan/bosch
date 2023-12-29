@@ -242,8 +242,8 @@
     .blue__small-text {
         font-size: 12px;
         text-align: center;
-        margin-top: 14px;
         margin-left: -11px;
+        margin: 14px auto 0;
     }
 }
 
@@ -270,5 +270,12 @@
 
     .blue__cta {
         margin-top: 32px;
+    }
+}
+
+@media (max-width: 450px) {
+    .blue__cta {
+        max-width: 100%;
+        padding-right: 15px;
     }
 }
