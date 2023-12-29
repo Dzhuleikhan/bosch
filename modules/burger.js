@@ -1,3 +1,5 @@
+import lenis from "./lenis";
+
 const burgerBtn = document.querySelector(".burger");
 const menu = document.getElementById("menu");
 const header = document.querySelector(".header");
@@ -16,6 +18,11 @@ burgerBtn.addEventListener("click", () => {
   if (burgerBtn.classList.contains("active")) {
     menuRepair.classList.remove("active");
     menuServ.classList.remove("active");
+    lenis.destroy();
+    document.querySelector("body").style.overflow = "hidden";
+  } else {
+    lenis.start();
+    document.querySelector("body").style.overflow = "visible";
   }
 });
 

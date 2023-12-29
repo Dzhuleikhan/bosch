@@ -1,3 +1,5 @@
+import lenis from "./lenis";
+
 const repairLink = document.querySelector(".header__nav-link--repair");
 const serviceLink = document.querySelector(".header__nav-link--service");
 const overlay = document.querySelector(".overlay");
@@ -18,51 +20,58 @@ function closeAllMenus() {
 }
 
 function openRepairMenu() {
-  setTimeout(() => {
-    repairMenu.classList.add("is-open");
-  }, 300);
+  repairMenu.classList.add("is-open");
+  document.getElementById("header").classList.add("is-white");
 }
 function closeRepairMenu() {
   repairMenu.classList.remove("is-open");
+  document.getElementById("header").classList.remove("is-white");
 }
 function openServiceMenu() {
-  setTimeout(() => {
-    serviceMenu.classList.add("is-open");
-  }, 300);
+  serviceMenu.classList.add("is-open");
+  document.getElementById("header").classList.add("is-white");
 }
 function closeServiceMenu() {
   serviceMenu.classList.remove("is-open");
+  document.getElementById("header").classList.remove("is-white");
 }
 
-repairLink.addEventListener("click", (e) => {
+repairLink.addEventListener("mouseenter", (e) => {
   e.preventDefault();
   if (!repairMenu.classList.contains("is-open")) {
     openOverylay();
     closeServiceMenu();
     openRepairMenu();
+    lenis.stop();
   } else {
     closeAllMenus();
+    lenis.start();
   }
 });
 repairMenu.addEventListener("mouseleave", () => {
   closeAllMenus();
+  lenis.start();
 });
-serviceLink.addEventListener("click", (e) => {
+serviceLink.addEventListener("mouseenter", (e) => {
   e.preventDefault();
   if (!serviceMenu.classList.contains("is-open")) {
     openOverylay();
     closeRepairMenu();
     openServiceMenu();
+    lenis.stop();
   } else {
     closeAllMenus();
+    lenis.start();
   }
 });
 serviceMenu.addEventListener("mouseleave", () => {
   closeAllMenus();
+  lenis.start();
 });
 
 overlay.addEventListener("click", (e) => {
   if (e.target === overlay) {
     closeAllMenus();
+    lenis.start();
   }
 });
