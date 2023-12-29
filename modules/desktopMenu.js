@@ -7,7 +7,10 @@ const repairMenu = document.querySelector(".repair");
 const serviceMenu = document.querySelector(".service__menu");
 
 function openOverylay() {
-  overlay.classList.add("is-open");
+  document.getElementById("header").classList.add("is-white");
+  setTimeout(() => {
+    overlay.classList.add("is-open");
+  }, 200);
 }
 function closeOverylay() {
   overlay.classList.remove("is-open");
@@ -17,23 +20,22 @@ function closeAllMenus() {
   closeOverylay();
   closeRepairMenu();
   closeServiceMenu();
+  setTimeout(() => {
+    document.getElementById("header").classList.remove("is-white");
+  }, 200);
 }
 
 function openRepairMenu() {
   repairMenu.classList.add("is-open");
-  document.getElementById("header").classList.add("is-white");
 }
 function closeRepairMenu() {
   repairMenu.classList.remove("is-open");
-  document.getElementById("header").classList.remove("is-white");
 }
 function openServiceMenu() {
   serviceMenu.classList.add("is-open");
-  document.getElementById("header").classList.add("is-white");
 }
 function closeServiceMenu() {
   serviceMenu.classList.remove("is-open");
-  document.getElementById("header").classList.remove("is-white");
 }
 
 repairLink.addEventListener("mouseenter", (e) => {

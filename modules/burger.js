@@ -13,15 +13,24 @@ const menuItems = document.querySelectorAll(".menu--item");
 const menuMobLink = document.querySelector(".header__mob-link");
 
 burgerBtn.addEventListener("click", () => {
-  burgerBtn.classList.toggle("active");
-  menu.classList.toggle("active");
-  header.classList.toggle("is-active");
   if (burgerBtn.classList.contains("active")) {
+    burgerBtn.classList.remove("active");
+    menu.classList.remove("active");
+    header.classList.remove("is-active");
+    setTimeout(() => {
+      header.classList.remove("is-white");
+    }, 250);
     menuRepair.classList.remove("active");
     menuServ.classList.remove("active");
     lenis.destroy();
     document.querySelector("body").style.overflow = "hidden";
   } else {
+    header.classList.add("is-white");
+    burgerBtn.classList.add("active");
+    setTimeout(() => {
+      menu.classList.add("active");
+      header.classList.add("is-active");
+    }, 250);
     lenis.start();
     document.querySelector("body").style.overflow = "visible";
   }

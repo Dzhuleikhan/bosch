@@ -178,3 +178,29 @@
         }
     }
 }
+
+.menu .menu__rep-inner {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu .repair__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li a {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        span {
+            line-height: 150%;
+        }
+    }
+}
