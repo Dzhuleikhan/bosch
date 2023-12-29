@@ -140,6 +140,7 @@
 @media (max-width: 1330px) {
     .steps__inner .steps__container {
         overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .steps__inner .steps__container::-webkit-scrollbar {

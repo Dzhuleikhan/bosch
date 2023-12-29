@@ -23,6 +23,10 @@
         background-color: var(--secondary-color);
     }
 
+    &.is-white {
+        background-color: var(--secondary-color);
+    }
+
     &__inner {
         display: flex;
         align-items: center;
