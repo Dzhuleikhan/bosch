@@ -2142,8 +2142,12 @@
               </div>
               <div class="master__slider">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="master__img">
+                  <div
+                    class="swiper-slide"
+                    itemscope
+                    itemtype="https://schema.org/Person"
+                  >
+                    <div class="master__img" itemprop="image">
                       <img
                         loading="lazy"
                         width="343"
@@ -2153,11 +2157,11 @@
                       />
                     </div>
                     <div class="master__info">
-                      <h4 class="master__name">
+                      <h4 class="master__name" itemprop="name">
                         Лебедев <br />
                         Май Онисимович
                       </h4>
-                      <p class="master__prof">
+                      <p class="master__prof" itemprop="jobTitle">
                         Мастер по ремонту техники Bosch
                       </p>
                       <div class="master__experience">Стаж 20 лет</div>
@@ -2631,7 +2635,9 @@
                         тем, что цена была очень разумной.
                       </p>
                     </div>
-                    <p class="review__item-date">Опубликовано вчера 18:00</p>
+                    <p class="review__item-date" itemprop="dateCreated">
+                      Опубликовано вчера 18:00
+                    </p>
                   </div>
                 </div>
                 <div class="swiper-slide">
