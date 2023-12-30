@@ -286,9 +286,7 @@
     }
 
 
-    .header__location {
-        display: none;
-    }
+
 
     .header__burger {
         display: flex;
@@ -306,6 +304,28 @@
     }
 }
 
+@media (max-width: 650px) {
+    .header__location {
+        margin-left: auto;
+
+        span {
+            display: none;
+        }
+    }
+
+    .header__inner {
+        gap: 20px;
+    }
+
+    .header__left {
+        width: 100%;
+    }
+
+    .header__right {
+        flex-shrink: 0;
+    }
+}
+
 @media (max-width: 550px) {
     .header__cta {
         display: none;
@@ -313,6 +333,10 @@
 
     .header__cta-mob {
         display: flex;
+    }
+
+    .header__location {
+        display: none;
     }
 }
 
