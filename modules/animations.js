@@ -11,11 +11,11 @@ mm.add("(min-width: 1025px)", () => {
   // service section
   gsap.set(".service__item", { alpha: 0 });
   ScrollTrigger.batch(".service__item", {
-    start: "top 80%",
+    start: "top bottom",
     onEnter: (elements) =>
       gsap.to(elements, { alpha: 1, stagger: 0.15, ease: "none" }),
-    onLeaveBack: (elements) =>
-      gsap.set(elements, { alpha: 0, overwrite: true }),
+    // onLeaveBack: (elements) =>
+    //   gsap.set(elements, { alpha: 1, overwrite: true }),
   });
   // steps section
   gsap.set(".steps__item", { x: -100, alpha: 0 });

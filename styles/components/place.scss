@@ -36,6 +36,7 @@
             opacity: 0;
             pointer-events: none;
             transition: all 0.2s;
+            visibility: hidden;
         }
     }
 
@@ -172,7 +173,10 @@
             font-weight: 400;
             line-height: 150%;
             letter-spacing: -0.28px;
-            color: var(--text-color);
+
+            a {
+                color: var(--text-color);
+            }
         }
     }
 }
