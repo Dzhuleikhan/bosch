@@ -1,5 +1,5 @@
 .header {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     width: 100%;
@@ -343,6 +343,10 @@
 
     .header__location {
         display: none;
+    }
+
+    .header {
+        position: fixed;
     }
 }
 

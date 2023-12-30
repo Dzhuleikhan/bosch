@@ -14,18 +14,14 @@ repairLink.addEventListener("mouseenter", (e) => {
     serviceMenu.classList.remove("active");
     repairMenu.classList.add("active");
     topHeader.classList.add("is-white");
-    lenis.destroy();
-    document.querySelector("body").classList.add("stop-scroll");
   } else {
     repairMenu.classList.remove("active");
     topHeader.classList.remove("is-white");
-    document.querySelector("body").classList.remove("stop-scroll");
   }
 });
 repairMenu.addEventListener("mouseleave", () => {
   repairMenu.classList.remove("active");
   topHeader.classList.remove("is-white");
-  document.querySelector("body").classList.remove("stop-scroll");
 });
 
 serviceLink.addEventListener("mouseenter", (e) => {
@@ -33,8 +29,6 @@ serviceLink.addEventListener("mouseenter", (e) => {
     repairMenu.classList.remove("active");
     serviceMenu.classList.add("active");
     topHeader.classList.add("is-white");
-    lenis.destroy();
-    document.querySelector("body").classList.add("stop-scroll");
   }
 });
 
@@ -42,5 +36,4 @@ serviceMenu.addEventListener("mouseleave", () => {
   serviceMenu.classList.remove("active");
   repairMenu.classList.remove("active");
   topHeader.classList.remove("is-white");
-  document.querySelector("body").classList.remove("stop-scroll");
 });

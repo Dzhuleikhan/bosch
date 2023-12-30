@@ -14,8 +14,6 @@ mm.add("(min-width: 1025px)", () => {
     start: "top bottom",
     onEnter: (elements) =>
       gsap.to(elements, { alpha: 1, stagger: 0.15, ease: "none" }),
-    // onLeaveBack: (elements) =>
-    //   gsap.set(elements, { alpha: 1, overwrite: true }),
   });
   // steps section
   gsap.set(".steps__item", { x: -100, alpha: 0 });

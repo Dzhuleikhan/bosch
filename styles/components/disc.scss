@@ -72,9 +72,10 @@
         padding: 18px;
         margin-top: 26px;
         transition: 0.2s;
+        cursor: pointer;
 
         &:hover {
-            box-shadow: 0 0 10px var(--red);
+            box-shadow: 0 0 10px var(--accent-color);
         }
     }
 
