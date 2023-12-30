@@ -162,11 +162,23 @@
         overflow-x: auto;
     }
 
+    .prior__container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
     .prior__head {
+        padding-left: 25px;
+        padding-right: 25px;
 
         h2 {
             font-size: 40px;
         }
+    }
+
+    .prior__inner {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 
     .prior__item {
