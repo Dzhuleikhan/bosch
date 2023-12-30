@@ -90,6 +90,24 @@
     }
 
     &__location {
+        background: none;
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+            svg {
+                fill: var(--accent-color);
+            }
+
+            span {
+                color: var(--accent-color);
+            }
+        }
+
+        svg {
+            fill: var(--primary-color);
+            transition: all 0.2s;
+        }
 
         span {
             font-size: 15px;
@@ -99,6 +117,7 @@
             letter-spacing: -0.15px;
             color: var(--primary-color);
             position: relative;
+            transition: all 0.2s;
 
             &::before {
                 content: "";
@@ -221,6 +240,11 @@
         align-items: center;
         gap: 28px;
     }
+}
+
+.location-btn {
+    border: none;
+    background: none;
 }
 
 .burger {
