@@ -2,6 +2,7 @@
     background: var(--form-gradient);
     padding-top: 44px;
     padding-bottom: 59px;
+    position: relative;
 
     position: relative;
 
@@ -242,6 +243,33 @@
     }
 }
 
+.scrollToTop {
+    width: 50px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    position: absolute;
+    top: -80px;
+    right: calc((100% - 1400px) / 2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    z-index: 100;
+
+    svg {
+        fill: var(--primary-color);
+    }
+}
+
+@media (max-width: 1450px) {
+    .scrollToTop {
+        right: 26px;
+    }
+}
+
+
 @media (max-width: 1200px) {
 
     .footer__info {
@@ -249,6 +277,8 @@
             font-size: 40px;
         }
     }
+
+
 }
 
 @media (max-width: 992px) {
@@ -262,6 +292,7 @@
         align-items: flex-start;
     }
 }
+
 
 @media (max-width: 550px) {
 
@@ -374,5 +405,12 @@
 
     .footer__cta-cards {
         justify-content: center;
+    }
+
+    .scrollToTop {
+        top: -70px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
     }
 }
