@@ -1,65 +1,46 @@
+import Lenis from "@studio-freight/lenis";
 import lenis from "./lenis";
 
+const topHeader = document.getElementById("header");
 const repairLink = document.querySelector(".header__nav-link--repair");
 const serviceLink = document.querySelector(".header__nav-link--service");
 const overlay = document.querySelector(".overlay");
-const repairMenu = document.querySelector(".repair");
+const repairMenu = document.querySelector(".repair__menu");
 const serviceMenu = document.querySelector(".service__menu");
 
-// Repair
-repairLink.addEventListener("mouseover", (e) => {
-  if (repairLink.classList.contains("is-open")) {
-    return false;
-  } else {
-    document.getElementById("header").classList.add("is-white");
-    setTimeout(() => {
-      overlay.classList.add("is-open");
-      serviceMenu.classList.add("is-open");
-      repairMenu.classList.add("is-open");
-    }, 200);
+// // Repair
+repairLink.addEventListener("mouseenter", (e) => {
+  if (!repairMenu.classList.contains("active")) {
+    serviceMenu.classList.remove("active");
+    repairMenu.classList.add("active");
+    topHeader.classList.add("is-white");
     lenis.destroy();
-    document.querySelector("body").style.overflow = "hidden";
+    document.querySelector("body").classList.add("stop-scroll");
+  } else {
+    repairMenu.classList.remove("active");
+    topHeader.classList.remove("is-white");
+    document.querySelector("body").classList.remove("stop-scroll");
   }
 });
 repairMenu.addEventListener("mouseleave", () => {
-  if (serviceLink.classList.contains("is-opem")) {
-    return false;
-  } else {
-    repairMenu.classList.remove("is-open");
-    overlay.classList.remove("is-open");
-    serviceMenu.classList.remove("is-open");
-    document.querySelector("body").style.overflow = "visible";
-    setTimeout(() => {
-      document.getElementById("header").classList.remove("is-white");
-    }, 400);
-  }
-});
-// Service
-serviceLink.addEventListener("mouseover", (e) => {
-  document.getElementById("header").classList.add("is-white");
-  setTimeout(() => {
-    overlay.classList.add("is-open");
-    repairMenu.classList.remove("is-open");
-    serviceMenu.classList.add("is-open");
-  }, 200);
-  lenis.destroy();
-  document.querySelector("body").style.overflow = "hidden";
-});
-serviceMenu.addEventListener("mouseleave", () => {
-  setTimeout(() => {
-    document.getElementById("header").classList.remove("is-white");
-  }, 200);
-  repairMenu.classList.remove("is-open");
-  overlay.classList.remove("is-open");
-  serviceMenu.classList.remove("is-open");
-  document.querySelector("body").style.overflow = "visible";
+  repairMenu.classList.remove("active");
+  topHeader.classList.remove("is-white");
+  document.querySelector("body").classList.remove("stop-scroll");
 });
 
-overlay.addEventListener("click", (e) => {
-  if (e.target === overlay) {
-    repairMenu.classList.remove("is-open");
-    overlay.classList.remove("is-open");
-    serviceMenu.classList.remove("is-open");
-    document.querySelector("body").style.overflow = "visible";
+serviceLink.addEventListener("mouseenter", (e) => {
+  if (!serviceMenu.classList.contains("active")) {
+    repairMenu.classList.remove("active");
+    serviceMenu.classList.add("active");
+    topHeader.classList.add("is-white");
+    lenis.destroy();
+    document.querySelector("body").classList.add("stop-scroll");
   }
+});
+
+serviceMenu.addEventListener("mouseleave", () => {
+  serviceMenu.classList.remove("active");
+  repairMenu.classList.remove("active");
+  topHeader.classList.remove("is-white");
+  document.querySelector("body").classList.remove("stop-scroll");
 });

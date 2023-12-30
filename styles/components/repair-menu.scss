@@ -20,19 +20,21 @@
 .repair {
     position: absolute;
     left: 0;
-    top: -100%;
+    top: 100%;
     width: 100%;
-    z-index: 22;
+    z-index: 1;
     background-color: var(--secondary-color);
-    padding-top: 190px;
+    padding-top: 40px;
     padding-bottom: 60px;
     will-change: transform;
-    transition: all 0.4s;
-    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 6px 5px rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
 
-    &.is-open {
-        top: 0;
-        transition: all 0.4s;
+    ul li a {
+        padding-top: 0;
+        padding-bottom: 0;
     }
 
     .service__cta {
@@ -69,17 +71,26 @@
             transition: color 0.2s;
         }
     }
+
+    &__menu.active {
+        opacity: 1;
+        visibility: visible;
+    }
 }
+
 
 .service__menu {
     position: fixed;
     left: 0;
-    top: -100%;
+    top: 100%;
     width: 100%;
     background-color: var(--secondary-color);
     transition: all 0.3s;
-    padding-top: 191px;
+    padding-top: 40px;
     padding-bottom: 60px;
+    opacity: 0;
+    visibility: visible;
+    box-shadow: 0 10px 6px 5px rgba(0, 0, 0, 0.3);
 
     &-list {
         display: grid;
@@ -109,7 +120,7 @@
     }
 }
 
-.service__menu.is-open {
-    top: 0;
-    transition: all 0.3s;
+.service__menu.active {
+    opacity: 1;
+    visibility: visible;
 }

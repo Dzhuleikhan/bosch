@@ -31,6 +31,14 @@ a {
 body {
     background-color: var(--secondary-color);
     user-select: none;
+
+    &.stop-scroll {
+        overflow: hidden;
+    }
+}
+
+body.stop-scroll {
+    overflow: hidden;
 }
 
 input {
