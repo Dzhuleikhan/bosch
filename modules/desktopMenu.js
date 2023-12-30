@@ -10,19 +10,19 @@ function openOverylay() {
   document.getElementById("header").classList.add("is-white");
   setTimeout(() => {
     overlay.classList.add("is-open");
-  }, 200);
+  }, 400);
 }
 function closeOverylay() {
   overlay.classList.remove("is-open");
+  setTimeout(() => {
+    document.getElementById("header").classList.remove("is-white");
+  }, 400);
 }
 
 function closeAllMenus() {
   closeOverylay();
   closeRepairMenu();
   closeServiceMenu();
-  setTimeout(() => {
-    document.getElementById("header").classList.remove("is-white");
-  }, 200);
 }
 
 function openRepairMenu() {
@@ -39,34 +39,47 @@ function closeServiceMenu() {
 }
 
 repairLink.addEventListener("mouseover", (e) => {
-  e.preventDefault();
   if (!repairMenu.classList.contains("is-open")) {
-    openOverylay();
-    closeServiceMenu();
-    openRepairMenu();
-    lenis.stop();
+    document.getElementById("header").classList.add("is-white");
+    setTimeout(() => {
+      openOverylay();
+      closeServiceMenu();
+      openRepairMenu();
+    }, 200);
+    lenis.destroy();
+    document.querySelector("body").style.overflow = "hidden";
   } else {
     closeAllMenus();
-    lenis.start();
+    document.querySelector("body").style.overflow = "visible";
   }
 });
 repairMenu.addEventListener("mouseleave", () => {
+  setTimeout(() => {
+    document.getElementById("header").classList.remove("is-white");
+  }, 200);
   closeAllMenus();
-  lenis.start();
+  document.querySelector("body").style.overflow = "visible";
 });
 serviceLink.addEventListener("mouseover", (e) => {
   e.preventDefault();
   if (!serviceMenu.classList.contains("is-open")) {
-    openOverylay();
-    closeRepairMenu();
-    openServiceMenu();
-    lenis.stop();
+    document.getElementById("header").classList.add("is-white");
+    setTimeout(() => {
+      openOverylay();
+      closeRepairMenu();
+      openServiceMenu();
+    }, 200);
+    lenis.destroy();
+    document.querySelector("body").style.overflow = "hidden";
   } else {
     closeAllMenus();
-    lenis.start();
+    document.querySelector("body").style.overflow = "visible";
   }
 });
 serviceMenu.addEventListener("mouseleave", () => {
+  setTimeout(() => {
+    document.getElementById("header").classList.remove("is-white");
+  }, 200);
   closeAllMenus();
   lenis.start();
 });
