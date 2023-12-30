@@ -213,6 +213,13 @@
         padding: 10px;
         margin-top: 26px;
         cursor: pointer;
+        transition: all 0.2s;
+
+        &:hover {
+            border-color: var(--accent-color);
+            background-color: var(--accent-color);
+            color: var(--secondary-color);
+        }
     }
 }
 
