@@ -12,6 +12,7 @@
     transition: all 0.3s;
     will-change: transform;
     overflow-x: hidden;
+    overflow-y: hidden;
     display: flex;
     flex-direction: column;
 
@@ -21,7 +22,6 @@
     }
 
     &__nav {
-        margin-top: 15px;
         padding-top: 22px;
         border-top: 1px solid var(--secondary2);
         // position: relative;
@@ -55,7 +55,7 @@
     }
 
     &__bottom {
-        margin-top: 120px;
+        margin-top: auto;
     }
 
     &__btn {
@@ -88,6 +88,7 @@
     .header__location {
         display: flex;
         gap: 8px;
+        display: none;
     }
 
     .header__cta {
@@ -97,16 +98,15 @@
     &__rep {
         position: absolute;
         right: -150%;
-        top: 0;
+        top: 90px;
         width: 100%;
-        height: 665px;
+        height: 90vh;
         background-color: var(--secondary-color);
         z-index: 3;
-        overflow-y: auto;
-        padding-bottom: 40px;
         transition: all 0.2s;
         padding: 27px;
-        margin-top: 102px;
+        padding-bottom: 0;
+        padding-top: 0;
 
         .repair__list li a {
             display: inline-flex;
@@ -145,7 +145,8 @@
         padding-bottom: 40px;
         transition: all 0.2s;
         padding: 27px;
-        margin-top: 135px;
+        margin-top: 85px;
+        padding-top: 0;
 
         & ul {
             grid-template-columns: 1fr;
@@ -184,6 +185,9 @@
     flex-direction: column;
     gap: 20px;
     margin-top: 29px;
+    padding-bottom: 30px;
+    height: 80vh;
+    overflow-y: auto;
 }
 
 .menu .repair__list-item span {
