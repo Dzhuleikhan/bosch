@@ -22,8 +22,8 @@ burgerBtn.addEventListener("click", () => {
     }, 250);
     menuRepair.classList.remove("active");
     menuServ.classList.remove("active");
-    lenis.destroy();
-    document.querySelector("body").style.overflow = "hidden";
+    lenis.start();
+    document.querySelector("body").style.overflow = "visible";
   } else {
     header.classList.add("is-white");
     burgerBtn.classList.add("active");
@@ -31,8 +31,8 @@ burgerBtn.addEventListener("click", () => {
       menu.classList.add("active");
       header.classList.add("is-active");
     }, 250);
-    lenis.start();
-    document.querySelector("body").style.overflow = "visible";
+    lenis.destroy();
+    document.querySelector("body").style.overflow = "hidden";
   }
 });
 

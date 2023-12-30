@@ -19,6 +19,7 @@ formModalBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
     formOverlay.classList.add("is-open");
     formModal.classList.remove("hidden");
+    document.querySelector("body").style.overflow = "hidden";
   });
 });
 
@@ -26,6 +27,7 @@ formModalClose.forEach((el) => {
   el.addEventListener("click", () => {
     formOverlay.classList.remove("is-open");
     formModal.classList.add("hidden");
+    document.querySelector("body").style.overflow = "visible";
   });
 });
 
@@ -33,6 +35,7 @@ formOverlay.addEventListener("click", (e) => {
   if (e.target === formOverlay) {
     formOverlay.classList.remove("is-open");
     formModal.classList.remove("hidden");
+    document.querySelector("body").style.overflow = "visible";
   }
 });
 
