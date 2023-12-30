@@ -38,7 +38,7 @@ function closeServiceMenu() {
   serviceMenu.classList.remove("is-open");
 }
 
-repairLink.addEventListener("mouseenter", (e) => {
+repairLink.addEventListener("mouseover", (e) => {
   e.preventDefault();
   if (!repairMenu.classList.contains("is-open")) {
     openOverylay();
@@ -54,7 +54,7 @@ repairMenu.addEventListener("mouseleave", () => {
   closeAllMenus();
   lenis.start();
 });
-serviceLink.addEventListener("mouseenter", (e) => {
+serviceLink.addEventListener("mouseover", (e) => {
   e.preventDefault();
   if (!serviceMenu.classList.contains("is-open")) {
     openOverylay();
