@@ -253,6 +253,11 @@
         margin-top: 21px;
     }
 
+    .price__top-btn {
+        width: 96px;
+        flex-shrink: 0;
+    }
+
     .price__top-btn span {
         display: none;
     }
