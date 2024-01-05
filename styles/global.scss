@@ -41,6 +41,10 @@ body {
     will-change: transform;
 }
 
+.big-line {
+    display: none;
+}
+
 .extra-page .big-line {
     opacity: 0.2;
 }
