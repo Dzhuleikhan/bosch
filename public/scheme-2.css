@@ -1,0 +1,45 @@
+// Scheme-1 colors
+:root {
+    /* Цвет фона страницы */
+    --page-bg: #151618;
+    /* Черный */
+    --primary-color: #ffffff;
+    /* Белый */
+    --secondary-color: #ffffff;
+    /* Красный */
+    --accent-color: #F05600;
+    /* Серый фон */
+    --secondary-bg: #1E232A;
+    /* Фон инпута */
+    --input-bg: #ffffff;
+    /* Синий */
+    --extra: #F05600;
+    /* Фон первого экрана */
+    --hero-gradient: linear-gradient(116deg, #04050C 21.03%, #22252E 66.16%);
+    /* Серый */
+    --text-color: #2C2F36;
+    /* Серый тексе */
+    --text-color2: #9FA5AD;
+    /* Фон карточки услуг */
+    --service-card-bg: #282B30;
+    /* Фон формы */
+    --form-gradient: linear-gradient(97deg, #1E232B 24.69%, #323641 98.34%);
+    /* Светло-серый 1 */
+    --secondary1: #9FA5AD;
+    /* Светло-серый 2 */
+    --secondary2: #DDE1E7;
+    /* Светло-серый 3 */
+    --secondary3: #CDD6E2;
+    /* Светло-серый 4 */
+    --secondary4: rgba(217, 217, 217, 0.20);
+    /* Светло-серый 5 */
+    --secondary5: #41454E;
+    /* Цвет наложения полускрытого блока */
+    --secondary6: #151618;
+    /* Дополнительный синий */
+    --secondary7: #F05600;
+    /* Фон иконки в отзывах */
+    --secondary8: #16181D;
+    /* Цвет линий */
+    --line-color: #3F434A;
+}
