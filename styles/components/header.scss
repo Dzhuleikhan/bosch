@@ -15,23 +15,23 @@
     }
 
     &.active {
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
         transition: all 0.3s;
     }
 
     &.is-active {
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
     }
 
     &.is-white {
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
     }
 
     &__inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        border-bottom: 1px solid var(--secondary2);
+        border-bottom: 1px solid var(--line-color);
         padding-bottom: 22px;
         position: relative;
     }
@@ -188,6 +188,10 @@
                 line-height: 120%;
                 color: var(--primary-color);
             }
+
+            svg {
+                fill: var(--accent-color);
+            }
         }
     }
 
@@ -197,6 +201,10 @@
         li a {
             padding-bottom: 20px;
             padding-top: 20px;
+
+            svg {
+                stroke: var(--primary-color);
+            }
         }
     }
 
@@ -239,6 +247,11 @@
         display: none;
         align-items: center;
         gap: 28px;
+
+        button svg,
+        a svg {
+            fill: var(--primary-color);
+        }
     }
 }
 
@@ -340,6 +353,11 @@
 
         span {
             display: none;
+        }
+
+        svg {
+            width: 23px;
+            height: auto;
         }
     }
 

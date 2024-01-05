@@ -8,12 +8,12 @@
 
     &__bg-line {
         position: absolute;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         top: 0;
         width: 100%;
         height: 100%;
         z-index: 0;
-        background: url('../img/hero-bg-line.webp') no-repeat center/cover;
         pointer-events: none;
     }
 
@@ -37,7 +37,7 @@
             font-weight: 700;
             line-height: 95%;
             letter-spacing: -2.7px;
-            color: var(--text-color-main);
+            color: var(--primary-color);
 
             span {
                 color: var(--accent-color);
@@ -50,7 +50,7 @@
             font-weight: 600;
             line-height: 110%;
             letter-spacing: -1.5px;
-            color: var(--text-color-main);
+            color: var(--primary-color);
             margin-top: 12px;
         }
 
@@ -68,7 +68,7 @@
         font-weight: 500;
         line-height: 120%;
         letter-spacing: -0.25px;
-        color: var(--text-color-main);
+        color: var(--primary-color);
 
         span {
             font-weight: 700;
@@ -90,9 +90,14 @@
             padding: 18px 40px;
             color: var(--text-color-main);
             border-radius: 4px;
-            border: 1px solid #BCC5D0;
+            border: 1px solid var(--input-bg);
             outline: none;
             background-color: var(--input-bg);
+            color: var(--text-color);
+
+            &::placeholder {
+                color: var(--text-color);
+            }
         }
 
         button {
@@ -122,7 +127,7 @@
         font-weight: 500;
         line-height: 110%;
         letter-spacing: -0.28px;
-        color: var(--secondary1);
+        color: var(--text-color2);
         max-width: 333px;
         margin-top: 16px;
         margin-left: 3px;
@@ -139,7 +144,7 @@
     &__bottom {
         padding-right: 5px;
         padding-top: 40px;
-        border-top: 1px solid var(--secondary2);
+        border-top: 1px solid var(--line-color);
     }
 
     &__list {
@@ -158,7 +163,7 @@
         font-weight: 400;
         line-height: 110%;
         letter-spacing: -0.22px;
-        color: var(--text-color-main);
+        color: var(--primary-color);
 
         span {
             font-weight: 600;
@@ -166,6 +171,7 @@
 
         svg {
             flex-shrink: 0;
+            fill: var(--primary-color);
         }
     }
 }

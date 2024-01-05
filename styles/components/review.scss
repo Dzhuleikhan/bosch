@@ -37,7 +37,7 @@
             font-weight: 400;
             line-height: 110%;
             letter-spacing: -0.13px;
-            color: var(--text-color);
+            color: var(--text-color2);
         }
     }
 
@@ -134,7 +134,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #D9DFE4;
+        background-color: var(--secondary8);
     }
 
     &__item-text {
@@ -171,7 +171,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--secondary-color);
+    background-color: var(--page-bg);
     cursor: pointer;
     transition: all 0.2s;
 
@@ -180,7 +180,7 @@
         border-color: var(--accent-color);
 
         svg {
-            fill: var(--secondary-color);
+            fill: var(--primary-color);
         }
     }
 

@@ -29,12 +29,20 @@ a {
 }
 
 body {
-    background-color: var(--secondary-color);
+    background-color: var(--page-bg);
     user-select: none;
 
     &.stop-scroll {
         overflow: hidden;
     }
+}
+
+.big-line {
+    will-change: transform;
+}
+
+.extra-page .big-line {
+    opacity: 0.2;
 }
 
 body.stop-scroll {

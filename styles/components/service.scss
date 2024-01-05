@@ -10,7 +10,7 @@
             line-height: 95%;
             /* 52.25px */
             letter-spacing: -1.65px;
-            color: var(--black);
+            color: var(--primary-color);
 
             span {
                 color: var(--accent-color);
@@ -369,10 +369,11 @@
                 max-width: 161px;
             }
 
-            img {
+            svg {
                 max-width: 71px;
                 left: 66%;
                 bottom: 57px;
+                fill: var(--secondary7);
             }
         }
 
@@ -404,6 +405,10 @@
                 line-height: 110%;
                 letter-spacing: -0.4px;
                 color: var(--primary-color);
+
+                svg {
+                    fill: var(--primary-color);
+                }
             }
 
             &-right {
@@ -713,7 +718,7 @@
             max-width: 100px;
         }
 
-        img {
+        svg {
             max-width: 38px;
             height: auto;
             left: 62%;

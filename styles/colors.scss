@@ -1,25 +1,75 @@
 // Scheme-1 colors
+// :root {
+//     /* Цвет фона страницы */
+//     --page-bg: #ffffff;
+//     /* Черный */
+//     --primary-color: #000000;
+//     /* Белый */
+//     --secondary-color: #ffffff;
+//     /* Красный */
+//     --accent-color: #F00000;
+//     /* Серый фон */
+//     --secondary-bg: #F4F6F8;
+//     /* Фон инпута */
+//     --input-bg: #ffffff;
+//     /* Синий */
+//     --extra: #2C6AC8;
+//     /* Фон первого экрана */
+//     --hero-gradient: linear-gradient(119deg, #F1F3F8 16.22%, #DFE7F2 82.39%);
+//     /* Серый */
+//     --text-color: #2C2F36;
+//     /* Серый тексе */
+//     --text-color2: #2C2F36;
+//     /* Фон карточки услуг */
+//     --service-card-bg: #F4F6F8;
+//     /* Фон формы */
+//     --form-gradient: linear-gradient(97deg, #060C15 24.69%, #137BFF 98.34%);
+//     /* Светло-серый 1 */
+//     --secondary1: #9FA5AD;
+//     /* Светло-серый 2 */
+//     --secondary2: #DDE1E7;
+//     /* Светло-серый 3 */
+//     --secondary3: #CDD6E2;
+//     /* Светло-серый 4 */
+//     --secondary4: rgba(217, 217, 217, 0.20);
+//     /* Светло-серый 5 */
+//     --secondary5: #ECF1F8;
+//     /* Цвет наложения на цены */
+//     --secondary6: #ffffff;
+//     /* Цвет иконки трубки телефона */
+//     --secondary7: #2C6AC8;
+//     /* Фон иконки в отзывах */
+//     --secondary8: #D9DFE4;
+//     /* Цвет линий */
+//     --line-color: #DDE1E7;
+// }
+
+// Scheme-1 colors
 :root {
+    /* Цвет фона страницы */
+    --page-bg: #151618;
     /* Черный */
-    --primary-color: #000000;
+    --primary-color: #ffffff;
     /* Белый */
     --secondary-color: #ffffff;
     /* Красный */
-    --accent-color: #F00000;
+    --accent-color: #F05600;
     /* Серый фон */
-    --secondary-bg: #F4F6F8;
+    --secondary-bg: #1E232A;
     /* Фон инпута */
     --input-bg: #ffffff;
     /* Синий */
-    --extra: #2C6AC8;
+    --extra: #F05600;
     /* Фон первого экрана */
-    --hero-gradient: linear-gradient(119deg, #F1F3F8 16.22%, #DFE7F2 82.39%);
+    --hero-gradient: linear-gradient(116deg, #04050C 21.03%, #22252E 66.16%);
     /* Серый */
     --text-color: #2C2F36;
+    /* Серый тексе */
+    --text-color2: #9FA5AD;
     /* Фон карточки услуг */
-    --service-card-bg: #F4F6F8;
+    --service-card-bg: #282B30;
     /* Фон формы */
-    --form-gradient: linear-gradient(97deg, #060C15 24.69%, #137BFF 98.34%);
+    --form-gradient: linear-gradient(97deg, #1E232B 24.69%, #323641 98.34%);
     /* Светло-серый 1 */
     --secondary1: #9FA5AD;
     /* Светло-серый 2 */
@@ -29,5 +79,13 @@
     /* Светло-серый 4 */
     --secondary4: rgba(217, 217, 217, 0.20);
     /* Светло-серый 5 */
-    --secondary5: #ECF1F8;
+    --secondary5: #41454E;
+    /* Цвет наложения полускрытого блока */
+    --secondary6: #151618;
+    /* Дополнительный синий */
+    --secondary7: #F05600;
+    /* Фон иконки в отзывах */
+    --secondary8: #16181D;
+    /* Цвет линий */
+    --line-color: #3F434A;
 }

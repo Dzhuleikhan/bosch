@@ -4,7 +4,7 @@
     top: -100%;
     width: 100%;
     height: 100%;
-    background-color: var(--secondary-color);
+    background-color: var(--page-bg);
     z-index: 25;
     padding: 27px;
     padding-top: 70px;
@@ -40,6 +40,10 @@
         line-height: 120%;
         letter-spacing: -0.48px;
         color: var(--primary-color);
+
+        svg {
+            stroke: var(--primary-color);
+        }
     }
 
     &__nav-link--repair {
@@ -101,7 +105,7 @@
         top: 90px;
         width: 100%;
         height: 90dvh;
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
         z-index: 3;
         transition: all 0.2s;
         padding: 27px;
@@ -130,6 +134,10 @@
             background: none;
             margin-bottom: 22px;
             border: none;
+
+            svg {
+                stroke: var(--primary-color);
+            }
         }
     }
 
@@ -139,7 +147,7 @@
         top: 0;
         width: 100%;
         height: auto;
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
         z-index: 3;
         overflow-y: auto;
         padding-bottom: 40px;
@@ -176,8 +184,16 @@
             background: none;
             margin-bottom: 22px;
             border: none;
+
+            svg {
+                stroke: var(--primary-color);
+            }
         }
     }
+}
+
+.service__menu-list--item svg {
+    fill: var(--primary-color);
 }
 
 .menu .menu__rep-inner {
