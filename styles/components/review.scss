@@ -135,6 +135,10 @@
         align-items: center;
         justify-content: center;
         background-color: var(--secondary8);
+
+        svg {
+            fill: var(--message-icon);
+        }
     }
 
     &__item-text {
