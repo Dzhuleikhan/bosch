@@ -26,6 +26,10 @@
             color: var(--primary-color);
             max-width: 482px;
         }
+
+        svg {
+            fill: var(--accent-color);
+        }
     }
 
     &__text {

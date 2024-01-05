@@ -39,15 +39,15 @@
         will-change: transform, opacity;
 
         &:hover {
-            background-color: var(--accent-color);
+            background-color: var(--service-card-bg-hover);
             transition: 0.4s;
 
             h3 {
-                color: var(--secondary-color);
+                color: var(--page-bg);
             }
 
             p {
-                color: var(--secondary-color);
+                color: var(--page-bg);
             }
 
             img {
@@ -362,7 +362,7 @@
             background-color: var(--secondary5);
 
             &:hover {
-                background-color: var(--accent-color);
+                background-color: var(--service-card-bg-hover);
             }
 
             h3 {

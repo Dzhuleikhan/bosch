@@ -51,6 +51,10 @@
         display: flex;
         align-items: center;
         gap: 7px;
+
+        svg {
+            fill: var(--accent-color);
+        }
     }
 
     &__rate-num {
@@ -125,6 +129,10 @@
         align-items: center;
         margin-top: 7px;
         gap: 3px;
+
+        svg {
+            fill: var(--accent-color);
+        }
     }
 
     &__item-icon {

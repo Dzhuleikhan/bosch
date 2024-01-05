@@ -104,6 +104,10 @@
             }
         }
 
+        &:hover span::before {
+            background-color: var(--accent-color);
+        }
+
         svg {
             fill: var(--primary-color);
             transition: all 0.2s;

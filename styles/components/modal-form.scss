@@ -21,7 +21,7 @@
     &__modal {
         width: 100%;
         max-width: 681px;
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
         padding: 60px 121px 73px;
         border-radius: 20px;
         position: relative;
@@ -58,7 +58,7 @@
             font-weight: 500;
             line-height: 110%;
             letter-spacing: -0.4px;
-            color: var(--text-color);
+            color: var(--text-color2);
             margin-top: 28px;
         }
     }
@@ -141,7 +141,7 @@
     &__thank {
         width: 100%;
         max-width: 681px;
-        background-color: var(--secondary-color);
+        background-color: var(--page-bg);
         border-radius: 20px;
         position: relative;
         min-height: 390px;
@@ -200,7 +200,7 @@
             font-weight: 500;
             line-height: 110%;
             letter-spacing: -0.4px;
-            color: var(--text-color);
+            color: var(--text-color2);
             margin-top: 21px;
         }
     }
