@@ -6,12 +6,14 @@
 
     &__lines {
         position: absolute;
+        left: 0;
         top: 0;
         width: 100%;
         height: 100%;
         z-index: 1;
-        left: 50%;
-        transform: translateX(-50%);
+        background: url('../img/prior-bg-lines.webp');
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     &__container {

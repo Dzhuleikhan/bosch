@@ -26,6 +26,8 @@
 
 a {
     text-decoration: none;
+    user-select: all;
+    pointer-events: all;
 }
 
 body {
@@ -37,15 +39,7 @@ body {
     }
 }
 
-.big-line {
-    will-change: transform;
-}
-
-.big-line {
-    display: none;
-}
-
-.extra-page .big-line {
+.extra-page .big-lines {
     opacity: 0.2;
 }
 
