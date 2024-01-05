@@ -43,11 +43,11 @@
             transition: 0.4s;
 
             h3 {
-                color: var(--page-bg);
+                color: var(--secondary-text);
             }
 
             p {
-                color: var(--page-bg);
+                color: var(--secondary-text);
             }
 
             img {
@@ -373,7 +373,7 @@
                 max-width: 71px;
                 left: 66%;
                 bottom: 57px;
-                fill: var(--secondary7);
+                fill: var(--accent-color);
             }
         }
 

@@ -1,0 +1,55 @@
+/* Scheme-3 colors */
+:root {
+    /* Цвет фона страницы */
+    --page-bg: #ffffff;
+    /* Черный */
+    --primary-color: #000000;
+    /* Белый */
+    --secondary-color: #ffffff;
+    /* Красный */
+    --accent-color: #B10035;
+    /* Серый фон */
+    --secondary-bg: #F2F2F2;
+    /* Фон инпута */
+    --input-bg: #ffffff;
+    /* Синий */
+    --extra: #1F2632;
+    /* Фон первого экрана */
+    --hero-gradient: linear-gradient(119deg, #F7F7FA 16.22%, #D9DCE0 82.39%);
+    /* Серый */
+    --text-color: #2C2F36;
+    /* Серый тексе */
+    --text-color2: #2C2F36;
+    /* Фон карточки услуг */
+    --service-card-bg: #F2F3F3;
+    /* Фон наведения на карточки услуг */
+    --service-card-bg-hover: #B10035;
+    /* Текст карточки при наведении */
+    --secondary-text: #ffffff;
+    /* Фон формы */
+    --form-gradient: #29313F;
+    /* Светло-серый 1 */
+    --secondary1: #9FA5AD;
+    /* Светло-серый 2 */
+    --secondary2: #DDE1E7;
+    /* Светло-серый 3 */
+    --secondary3: #CDD6E2;
+    /* Светло-серый 4 */
+    --secondary4: rgba(217, 217, 217, 0.20);
+    /* Светло-серый 5 */
+    --secondary5: #EFF0F1;
+    /* Цвет наложения на цены */
+    --secondary6: #ffffff;
+    /* Цвет иконки */
+    --secondary7: #000000;
+    /* Цвет трубочки телефона */
+    --secondary-phone: #ffffff;
+    /* Фон иконки в отзывах */
+    --secondary8: #FAFAFA;
+    /* Цвет линий */
+    --line-color: #DDE1E7;
+    /* Цвет иконки сообщения */
+    --message-icon: #dfe1e3;
+    /* Доп синий для иконки */
+    --secondary-blue: #000000;
+}
