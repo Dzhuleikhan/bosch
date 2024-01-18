@@ -21,6 +21,15 @@
         overflow-x: auto;
         overflow-y: hidden;
         margin-top: 40px;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     }
 
     &__item {
