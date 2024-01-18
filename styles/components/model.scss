@@ -197,7 +197,6 @@
     .model__bottom {
         padding-left: 26px;
         padding-right: 26px;
-        margin-right: 22px;
         padding-top: 22px;
 
         &-title {
@@ -224,5 +223,11 @@
         li a {
             font-size: 15px;
         }
+    }
+}
+
+@media (max-width: 450px) {
+    .model__more-btn {
+        max-width: 100%;
     }
 }
