@@ -175,17 +175,6 @@
         padding-top: 50px;
     }
 
-    .fixing__tab {
-        display: flex;
-        overflow: auto;
-
-        button {
-            padding: 12px 20px;
-            flex-shrink: 0;
-            width: auto;
-        }
-    }
-
     .fixing__title {
         font-size: 45px;
     }
@@ -203,6 +192,18 @@
 
     .fixing__item-img {
         min-height: 200px;
+    }
+
+    .fixing__tab {
+        display: flex;
+        overflow: auto;
+
+        button {
+            padding-left: 40px;
+            padding-right: 40px;
+            flex-shrink: 0;
+            width: auto;
+        }
     }
 }
 
@@ -223,6 +224,7 @@
         gap: 10px;
 
         button {
+            padding: 12px 20px;
             font-size: 16px;
             border-radius: 8px;
         }
