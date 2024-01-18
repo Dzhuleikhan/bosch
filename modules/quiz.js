@@ -1,13 +1,4 @@
-const quizShowBtn = document.querySelector(".preview__start-btn");
-const quizPreview = document.querySelector(".preview");
 const quizContent = document.querySelector(".quiz");
-
-if (quizShowBtn) {
-  quizShowBtn.addEventListener("click", () => {
-    quizPreview.style.display = "none";
-    quizContent.classList.add("active");
-  });
-}
 
 const tabs = document.querySelectorAll(".quiz__tab");
 const nextBtn = document.querySelector(".quiz__btn-next");
@@ -21,7 +12,6 @@ if (quizContent) {
   function showTab(n) {
     var x = document.querySelectorAll(".quiz__tab");
     x[n].style.display = "block";
-    // //   Progress
     if (n == 0) {
       prevBtn.style.display = "none";
     } else {

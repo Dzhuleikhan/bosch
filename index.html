@@ -4142,6 +4142,62 @@
                       «соло» - отдельностоящие
                     </div>
                   </div>
+                  <div class="fixing__item">
+                    <div class="fixing__item-img">
+                      <img
+                        loading="lazy"
+                        width="563"
+                        height="467"
+                        src="./img/fixing-card-img1.png"
+                        alt="Стиральная машина"
+                      />
+                    </div>
+                    <div class="fixing__item-name">
+                      «соло» - отдельностоящие
+                    </div>
+                  </div>
+                  <div class="fixing__item">
+                    <div class="fixing__item-img">
+                      <img
+                        loading="lazy"
+                        width="563"
+                        height="467"
+                        src="./img/fixing-card-img2.png"
+                        alt="Стиральная машина"
+                      />
+                    </div>
+                    <div class="fixing__item-name">
+                      встраиваемые – «встройки»
+                    </div>
+                  </div>
+                  <div class="fixing__item">
+                    <div class="fixing__item-img">
+                      <img
+                        loading="lazy"
+                        width="563"
+                        height="467"
+                        src="./img/fixing-card-img2.png"
+                        alt="Стиральная машина"
+                      />
+                    </div>
+                    <div class="fixing__item-name">
+                      встраиваемые – «встройки»
+                    </div>
+                  </div>
+                  <div class="fixing__item">
+                    <div class="fixing__item-img">
+                      <img
+                        loading="lazy"
+                        width="563"
+                        height="467"
+                        src="./img/fixing-card-img1.png"
+                        alt="Стиральная машина"
+                      />
+                    </div>
+                    <div class="fixing__item-name">
+                      «соло» - отдельностоящие
+                    </div>
+                  </div>
                 </div>
               </div>
               <div class="fixing__content fixing__content-2">
@@ -4342,7 +4398,8 @@
         <section id="calc" class="calc">
           <div class="container">
             <div class="calc__inner">
-              <div class="preview">
+              <!-- QUIZ -->
+              <div class="quiz">
                 <div class="preview__head">
                   <h3>Узнайте стоимость ремонта вашей стиральной машинки</h3>
                   <svg
@@ -4360,19 +4417,6 @@
                     />
                   </svg>
                 </div>
-                <div class="preview__body">
-                  <p>
-                    Ответьте на вопросы. <br />
-                    Это займёт
-                    <span>не более 2 минут.</span>
-                  </p>
-                  <button class="preview__start-btn">
-                    Рассчитать стоимость ремонта
-                  </button>
-                </div>
-              </div>
-              <!-- QUIZ -->
-              <div class="quiz">
                 <form id="quiz-form" action="#">
                   <div class="quiz__tab quiz__tab-1">
                     <div class="quiz__progress">
@@ -4545,10 +4589,9 @@
                   </div>
                   <div class="quiz__tab quiz__last-tab quiz__tab-6">
                     <div class="quiz__last-head">
-                      <h4>Все готово для расчета</h4>
                       <p class="quiz__last-head--text">
-                        Представьтесь и укажите телефон, чтобы специалист смог
-                        сделать расчет и связаться с Вами.
+                        Укажите телефон, чтобы специалист смог сделать расчет и
+                        связаться с Вами.
                       </p>
                       <div class="quiz__last-reply">
                         <svg
@@ -4570,30 +4613,27 @@
                         <p>Расчет будет готов в течение 10 минут!</p>
                       </div>
                     </div>
-                    <div class="quiz__last-inputs">
-                      <input type="text" placeholder="Ваше имя" name="Name" />
-                      <input
-                        type="tel"
-                        placeholder="Номер телефона"
-                        name="Phone"
-                      />
+                    <div class="quiz__form-group">
+                      <div class="quiz__last-inputs">
+                        <input
+                          type="tel"
+                          placeholder="Номер телефона"
+                          name="Phone"
+                        />
+                        <p class="quiz__phone-note">
+                          Пожалуйста введите корректно, иначе мы не сможем
+                          связаться с вами
+                        </p>
+                      </div>
+                      <button class="quiz__submit-btn" type="submit">
+                        Получить расчет
+                      </button>
                     </div>
-                    <p class="quiz__phone-note">
-                      Пожалуйста введите корректно, иначе мы не сможем связаться
-                      с вами
-                    </p>
                   </div>
                   <div class="quiz__btns">
                     <button class="quiz__btn-prev">Назад</button>
                     <button class="quiz__btn-next">Следующий шаг</button>
-                    <button class="quiz__submit-btn" type="submit">
-                      Получить расчет
-                    </button>
                   </div>
-                  <p class="quiz__last-notification">
-                    Отправляя запрос Вы соглашаетесь на обработку персональных
-                    данных
-                  </p>
                 </form>
               </div>
             </div>
