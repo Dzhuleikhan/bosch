@@ -4,5 +4,8 @@ export default () => {
       host: true,
       open: true,
     },
+    build: {
+      minify: false,
+    },
   };
 };

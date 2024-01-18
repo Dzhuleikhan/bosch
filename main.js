@@ -12,3 +12,4 @@ import "./modules/animations";
 import "./modules/form";
 import "./modules/footer";
 import "./modules/cities";
+import "./modules/fixing";
