@@ -20,6 +20,7 @@
 
     &__row {
         display: flex;
+        align-items: center;
         gap: 26px;
         padding: 13px 20px;
         background-color: var(--service-card-bg);
@@ -69,6 +70,10 @@
 
     .code {
         padding-top: 50px;
+    }
+
+    .code__row {
+        align-items: flex-start;
     }
 }
 
