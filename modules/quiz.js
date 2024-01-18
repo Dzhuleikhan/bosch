@@ -21,8 +21,6 @@ if (quizContent) {
       nextBtn.style.display = "none";
       prevBtn.style.display = "none";
       submitBtn.style.display = "block";
-      document.querySelector(".quiz__last-notification").style.display =
-        "block";
     }
   }
 
@@ -50,7 +48,7 @@ if (quizForm) {
   quizForm.addEventListener("submit", (e) => {
     e.preventDefault();
 
-    let formData = new FormData(form);
+    let formData = new FormData(quizForm);
 
     let xhr = new XMLHttpRequest();
 
@@ -65,9 +63,9 @@ if (quizForm) {
       }
     };
 
-    xhr.open("POST", "mail.php", true);
+    xhr.open("POST", "https://test.neff-remont.ru/api/order_handler.php", true);
     xhr.send(formData);
-    form.reset();
+    quizForm.reset();
     console.log(formData);
   });
 }
