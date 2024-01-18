@@ -51,13 +51,14 @@ form.forEach((form) => {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           console.log("has sent");
+          formOverlay.classList.add("is-open");
           formModal.classList.add("hidden");
           thankModal.classList.remove("hidden");
         }
       }
     };
 
-    xhr.open("POST", "mail.php", true);
+    xhr.open("POST", "https://test.neff-remont.ru/api/order_handler.php", true);
     xhr.send(formData);
     form.reset();
     console.log(formData);
