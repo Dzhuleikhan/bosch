@@ -58,9 +58,9 @@ if (quizForm) {
       if (xhr.readyState === 4) {
         if (xhr.status === 200) {
           console.log("has sent");
+          document.querySelector(".form").classList.add("is-open");
+          formModal.classList.add("hidden");
           thankModal.classList.remove("hidden");
-          quizPreview.style.display = "block";
-          quizContent.classList.remove("active");
         }
       }
     };
