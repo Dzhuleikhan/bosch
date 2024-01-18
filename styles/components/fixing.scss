@@ -58,8 +58,6 @@
         }
     }
 
-    &__content-1 {}
-
     &__content-inner {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -90,9 +88,6 @@
         margin-top: 20px;
     }
 
-    &__content-2 {}
-
-    &__content-3 {}
 }
 
 @media (max-width: 992px) {
