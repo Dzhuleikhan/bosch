@@ -14,3 +14,4 @@ import "./modules/footer";
 import "./modules/cities";
 import "./modules/fixing";
 import "./modules/models";
+import "./modules/quiz";
