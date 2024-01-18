@@ -23,6 +23,15 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
 
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        & {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+
         button {
             width: 100%;
             padding: 25px;
@@ -36,11 +45,6 @@
             border-radius: 15px;
             cursor: pointer;
             transition: 0.2s;
-
-            &:hover {
-                background-color: var(--primary-color);
-                color: var(--page-bg);
-            }
 
             &.active {
                 background-color: var(--primary-color);
@@ -88,6 +92,13 @@
         margin-top: 20px;
     }
 
+}
+
+@media (min-width: 992px) {
+    .fixing__tab button:hover {
+        background-color: var(--primary-color);
+        color: var(--page-bg);
+    }
 }
 
 @media (max-width: 992px) {
